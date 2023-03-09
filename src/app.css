@@ -1,0 +1,12 @@
+.container__temp{
+    padding: 0;
+    margin: 0;
+
+    width: 200px;
+}
+.temp{
+    display: flex;
+    flex-direction: column;
+    
+}
+

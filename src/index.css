@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img{
+  overflow: hidden;
+  height: 41rem;
+  width: 100rem;
+}
+
+*{
+  box-sizing:border-box;
+  margin: 0;
+  padding:0;
+  overflow: hidden;
+}
+p{
+font-size: 1.6rem
+}
+h2{
+  font-size:5rem;
+}
+.all {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: rgba(0,0,0,0.4);
+  color:#fff;
+}
+.all:before {
+  content: '';
+  background: url('./assets/Cloudy.jpg') no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.container {
+  max-width: 700px;
+  height: 500px;
+  margin: auto;
+  padding: 0 1rem;
+  position: relative;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.all .top {
+  width: 100%;
+  margin:0 auto;
+}
+
+.all .description {
+  position: relative;
+  right: -60%;
+  transform-origin: 0 0;
+  transform: rotate(269deg);
+  flex-direction:  column;
+ 
+}
+.description img{
+  transform: rotate(-269deg);
+}
+.all .botton{
+  display:flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: rgba(255,255,255, 0.1);
+  height: 130px;
+
+}
+form{
+  gap:30px;
+}
+.all .impu{
+  text-align: center;
+  padding: 1rem;
+  
+}
+.all input{
+  padding: .7rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255, 0.8);
+  background: rgba(255,255,255, 0.1);
+  color: #f8f8f8;
+  
+}
+
+.img1 {
+  background-image: url("./assets/Cloudy.jpj");
+}
+.img2 {
+  background-image: url("./assets/Rain.jpj");
+}
+.img3 {
+  background-image: url("./assets/Storm.jpj");
+}
+.img4 {
+  background-image: url("./assets/Sun.jpj");
+}
+
+@media (max-width: 570px) {
+  .all .description{
+  right: -50%;
+  transform-origin: 0 0;
+  transform: rotate(0);
+  flex-direction:  column;
+bottom: 65%;
+  }
+  .description img{
+    transform: rotate(0);
+    
+  }
+}
+
+
